@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "VuI5qNqXNCqsq1GuU44VSiub9QW3tLpl/nebHZRYchHyo/gz85erujNb1qglxtlb9+l5YuiSbgg0uRb7y0tkzw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Application\\IAudit.Teste.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\diasl\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\diasl\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\diasl\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

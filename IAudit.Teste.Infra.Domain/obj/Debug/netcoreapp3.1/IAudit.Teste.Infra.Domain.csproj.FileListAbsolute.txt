@@ -1,0 +1,9 @@
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.Domain\obj\Debug\netcoreapp3.1\IAudit.Teste.Infra.Domain.csproj.CoreCompileInputs.cache
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.Domain\obj\Debug\netcoreapp3.1\IAudit.Teste.Infra.Domain.AssemblyInfoInputs.cache
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.Domain\obj\Debug\netcoreapp3.1\IAudit.Teste.Infra.Domain.AssemblyInfo.cs
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.Domain\bin\Debug\netcoreapp3.1\IAudit.Teste.Infra.Domain.deps.json
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.Domain\bin\Debug\netcoreapp3.1\IAudit.Teste.Infra.Domain.dll
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.Domain\bin\Debug\netcoreapp3.1\IAudit.Teste.Infra.Domain.pdb
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.Domain\obj\Debug\netcoreapp3.1\IAudit.Teste.Infra.Domain.dll
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.Domain\obj\Debug\netcoreapp3.1\IAudit.Teste.Infra.Domain.pdb
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.Domain\obj\Debug\netcoreapp3.1\IAudit.Teste.Infra.Domain.csprojAssemblyReference.cache

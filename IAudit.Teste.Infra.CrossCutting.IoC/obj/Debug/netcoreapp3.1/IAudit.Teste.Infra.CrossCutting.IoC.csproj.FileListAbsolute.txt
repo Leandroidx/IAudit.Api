@@ -1,0 +1,16 @@
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.CrossCutting.IoC\obj\Debug\netcoreapp3.1\IAudit.Teste.Infra.CrossCutting.IoC.csprojAssemblyReference.cache
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.CrossCutting.IoC\obj\Debug\netcoreapp3.1\IAudit.Teste.Infra.CrossCutting.IoC.AssemblyInfoInputs.cache
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.CrossCutting.IoC\obj\Debug\netcoreapp3.1\IAudit.Teste.Infra.CrossCutting.IoC.AssemblyInfo.cs
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.CrossCutting.IoC\obj\Debug\netcoreapp3.1\IAudit.Teste.Infra.CrossCutting.IoC.csproj.CopyComplete
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.CrossCutting.IoC\obj\Debug\netcoreapp3.1\IAudit.Teste.Infra.CrossCutting.IoC.csproj.CoreCompileInputs.cache
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.CrossCutting.IoC\bin\Debug\netcoreapp3.1\IAudit.Teste.Infra.Data.dll
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.CrossCutting.IoC\bin\Debug\netcoreapp3.1\IAudit.Teste.Infra.Domain.dll
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.CrossCutting.IoC\bin\Debug\netcoreapp3.1\IAudit.Teste.Infra.CrossCutting.IoC.deps.json
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.CrossCutting.IoC\bin\Debug\netcoreapp3.1\IAudit.Teste.Infra.CrossCutting.IoC.dll
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.CrossCutting.IoC\bin\Debug\netcoreapp3.1\IAudit.Teste.Infra.CrossCutting.IoC.pdb
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.CrossCutting.IoC\bin\Debug\netcoreapp3.1\IAudit.Teste.Infra.Data.pdb
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.CrossCutting.IoC\bin\Debug\netcoreapp3.1\IAudit.Teste.Infra.Domain.pdb
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.CrossCutting.IoC\obj\Debug\netcoreapp3.1\IAudit.Teste.Infra.CrossCutting.IoC.dll
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.CrossCutting.IoC\obj\Debug\netcoreapp3.1\IAudit.Teste.Infra.CrossCutting.IoC.pdb
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.CrossCutting.IoC\bin\Debug\netcoreapp3.1\IAudit.Teste.Application.dll
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste.Infra.CrossCutting.IoC\bin\Debug\netcoreapp3.1\IAudit.Teste.Application.pdb

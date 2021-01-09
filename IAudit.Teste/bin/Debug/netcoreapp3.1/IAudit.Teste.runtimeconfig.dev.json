@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\diasl\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\diasl\\.nuget\\packages"
+    ]
+  }
+}

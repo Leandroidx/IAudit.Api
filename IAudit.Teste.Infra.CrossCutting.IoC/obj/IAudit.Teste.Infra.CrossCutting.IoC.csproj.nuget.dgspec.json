@@ -1,0 +1,269 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Infra.CrossCutting.IoC\\IAudit.Teste.Infra.CrossCutting.IoC.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Application\\IAudit.Teste.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Application\\IAudit.Teste.Application.csproj",
+        "projectName": "IAudit.Teste.Application",
+        "projectPath": "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Application\\IAudit.Teste.Application.csproj",
+        "packagesPath": "C:\\Users\\diasl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\diasl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://192.168.0.40:1234/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Infra.Domain\\IAudit.Teste.Infra.Domain.csproj": {
+                "projectPath": "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Infra.Domain\\IAudit.Teste.Infra.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Infra.CrossCutting.IoC\\IAudit.Teste.Infra.CrossCutting.IoC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Infra.CrossCutting.IoC\\IAudit.Teste.Infra.CrossCutting.IoC.csproj",
+        "projectName": "IAudit.Teste.Infra.CrossCutting.IoC",
+        "projectPath": "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Infra.CrossCutting.IoC\\IAudit.Teste.Infra.CrossCutting.IoC.csproj",
+        "packagesPath": "C:\\Users\\diasl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Infra.CrossCutting.IoC\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\diasl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://192.168.0.40:1234/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Application\\IAudit.Teste.Application.csproj": {
+                "projectPath": "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Application\\IAudit.Teste.Application.csproj"
+              },
+              "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Infra.Data\\IAudit.Teste.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Infra.Data\\IAudit.Teste.Infra.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Infra.Data\\IAudit.Teste.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Infra.Data\\IAudit.Teste.Infra.Data.csproj",
+        "projectName": "IAudit.Teste.Infra.Data",
+        "projectPath": "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Infra.Data\\IAudit.Teste.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\diasl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Infra.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\diasl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://192.168.0.40:1234/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Infra.Domain\\IAudit.Teste.Infra.Domain.csproj": {
+                "projectPath": "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Infra.Domain\\IAudit.Teste.Infra.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Infra.Domain\\IAudit.Teste.Infra.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Infra.Domain\\IAudit.Teste.Infra.Domain.csproj",
+        "projectName": "IAudit.Teste.Infra.Domain",
+        "projectPath": "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Infra.Domain\\IAudit.Teste.Infra.Domain.csproj",
+        "packagesPath": "C:\\Users\\diasl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\diasl\\source\\repos\\IAudit.Teste\\IAudit.Teste.Infra.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\diasl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://192.168.0.40:1234/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

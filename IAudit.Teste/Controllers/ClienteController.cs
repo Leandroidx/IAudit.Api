@@ -102,7 +102,7 @@ namespace IAudit.Teste.Controllers
         [ProducesResponseType(typeof(bool), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult EditarCliente(int id, ClienteViewModel clienteViewModel)
-        {
+        { 
             var retorno = clienteAppService.EditarCliente(id, clienteViewModel);
             if (!retorno)
             {

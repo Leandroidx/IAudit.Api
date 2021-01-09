@@ -3,8 +3,36 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace IAudit.Teste.Infra.Domain.Models
 {
-    public class ClienteEndereco : Entity
+    public class ClienteEndereco
     {
+
+        public ClienteEndereco()
+        {
+            this.DataCriacao = this.DataCriacao;
+            this.DataAlteracao = DateTime.Now;
+            this.Ativo = true;
+        }
+
+        public ClienteEndereco(ClienteEndereco clienteEndereco,
+            int? idCliente,
+            DateTime? dataCriacao,
+            DateTime? dataAlteracao)
+        {
+            this.Id = clienteEndereco.Id;
+            this.IdCliente = idCliente ?? clienteEndereco.IdCliente;
+            this.Cep = clienteEndereco.Cep;
+            this.Endereco = clienteEndereco.Endereco;
+            this.Bairro = clienteEndereco.Bairro;
+            this.Cidade = clienteEndereco.Cidade;
+            this.Estado = clienteEndereco.Estado;
+            this.Pais = clienteEndereco.Pais;
+            this.Complemento = clienteEndereco.Complemento;
+            this.DataCriacao = dataCriacao ?? this.DataCriacao;
+            this.DataAlteracao = dataAlteracao ?? this.DataAlteracao;
+            this.Ativo = true;
+        }
+
+        public int Id { get; set; }
         public int IdCliente { get; private set; }
         public string Cep { get; private set; }
         public string Endereco { get; private set; }

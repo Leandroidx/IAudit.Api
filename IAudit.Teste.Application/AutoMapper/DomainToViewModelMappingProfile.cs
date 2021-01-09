@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using IAudit.Teste.Application.ViewModels;
 using IAudit.Teste.Infra.Domain.Models;
+using System.Linq;
 
 namespace IAudit.Teste.Application.AutoMapper
 {
@@ -13,12 +14,11 @@ namespace IAudit.Teste.Application.AutoMapper
             AllowNullDestinationValues = true;
 
             CreateMap<Cliente, ClienteViewModel>()
-                .ForMember(c => c.IdCliente, opts => opts.MapFrom(cvm => cvm.Id))
-                .ForMember(c => c.Nome, opts => opts.MapFrom(cvm => cvm.Nome));
+                .ForMember(cvm => cvm.IdCliente, opts => opts.MapFrom(c => c.Id))
+                .ForMember(cvm => cvm.ClienteEnderecos, opts => opts.MapFrom(c => c.ClienteEnderecos.ToList()));
 
             CreateMap<ClienteEndereco, ClienteEnderecoViewModel>()
-                .ForMember(c => c.IdClienteEndereco, opts => opts.MapFrom(cvm => cvm.Id))
-                .ForMember(c => c.Endereco, opts => opts.MapFrom(cvm => cvm.Endereco));
+                .ForMember(cvm => cvm.IdClienteEndereco, opts => opts.MapFrom(c => c.Id));
         }
     }
 }

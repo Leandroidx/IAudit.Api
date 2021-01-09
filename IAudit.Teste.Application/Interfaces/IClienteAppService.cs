@@ -5,9 +5,11 @@ namespace IAudit.Teste.Application.Interfaces
 {
     public interface IClienteAppService
     {
-        ClienteViewModel ObterCliente();
+        ClienteViewModel ObterCliente(int id);
 
-        bool CadastrarCliente(ClienteViewModel cliente);
+        bool EditarCliente(int id, ClienteViewModel clienteViewModel);
+
+        int CadastrarCliente(ClienteCadastroViewModel clienteViewModel);
 
         IEnumerable<ClienteViewModel> ListarClientes();
 

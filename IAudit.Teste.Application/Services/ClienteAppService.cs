@@ -2,6 +2,7 @@
 using IAudit.Teste.Application.Interfaces;
 using IAudit.Teste.Application.ViewModels;
 using IAudit.Teste.Infra.Domain.Interfaces;
+using IAudit.Teste.Infra.Domain.Models;
 using System;
 using System.Collections.Generic;
 
@@ -20,14 +21,25 @@ namespace IAudit.Teste.Application.Services
             this.clienteRepository = clienteRepository;
         }
 
-        public bool CadastrarCliente(ClienteViewModel cliente)
+        public int CadastrarCliente(ClienteCadastroViewModel clienteViewModel)
         {
-            throw new NotImplementedException();
+            var cliente = mapper.Map<Cliente>(clienteViewModel);
+            cliente = new Cliente(cliente, DateTime.Now, null);
+
+            return clienteRepository.CadastrarCliente(cliente);
+        }
+
+        public bool EditarCliente(int id, ClienteViewModel clienteViewModel)
+        {
+            var cliente = mapper.Map<Cliente>(clienteViewModel);
+            cliente = new Cliente(cliente, DateTime.Now, null);
+
+            return clienteRepository.EditarCliente(id, cliente);
         }
 
         public bool ExcluirCliente(int IdCliente)
         {
-            throw new NotImplementedException();
+            return clienteRepository.ExcluirCliente(IdCliente);
         }
 
         public IEnumerable<ClienteViewModel> ListarClientes()
@@ -36,9 +48,10 @@ namespace IAudit.Teste.Application.Services
             return mapper.Map<IEnumerable<ClienteViewModel>>(clientes);
         }
 
-        public ClienteViewModel ObterCliente()
+        public ClienteViewModel ObterCliente(int id)
         {
-            throw new NotImplementedException();
+            var cliente = clienteRepository.SelecionarCliente(id);
+            return mapper.Map<ClienteViewModel>(cliente);
         }
     }
 }

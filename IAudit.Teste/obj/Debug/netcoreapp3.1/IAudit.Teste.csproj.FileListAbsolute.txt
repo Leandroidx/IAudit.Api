@@ -146,3 +146,5 @@ C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste\obj\Debug\netcoreapp3.1\IA
 C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste\obj\Debug\netcoreapp3.1\IAudit.Teste.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste\obj\Debug\netcoreapp3.1\IAudit.Teste.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste\bin\Debug\netcoreapp3.1\IAudit.Teste.xml
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\diasl\source\repos\IAudit.Teste\IAudit.Teste\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll

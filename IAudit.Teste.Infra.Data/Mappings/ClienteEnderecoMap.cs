@@ -12,11 +12,11 @@ namespace IAudit.Teste.Infra.Data.Mappings
 
             builder.ToTable("ClienteEndereco");
 
-            builder.HasKey(c => c.Id);
+            builder.HasKey(ce => ce.Id);
 
-            builder.HasOne(c => c.Cliente)
-                   .WithMany(c => c.ClienteEndereco)
-                   .HasForeignKey(c => c.IdCliente);
+            builder.HasOne(ce => ce.Cliente)
+                   .WithMany(ce => ce.ClienteEnderecos)
+                   .HasForeignKey(ce => ce.IdCliente);
         }
     }
 }

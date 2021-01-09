@@ -4,5 +4,39 @@
         <name>IAudit.Teste</name>
     </assembly>
     <members>
+        <member name="M:IAudit.Teste.Controllers.ClienteController.ListarClientes">
+            <summary>
+            Lista Todos clientes e seus endereços
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IAudit.Teste.Controllers.ClienteController.ObterCliente(System.Int32)">
+            <summary>
+            Retorna um cliente pelo id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IAudit.Teste.Controllers.ClienteController.ExcluirCliente(System.Int32)">
+            <summary>
+            Deleta um cliente
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IAudit.Teste.Controllers.ClienteController.CadastrarCliente(IAudit.Teste.Application.ViewModels.ClienteCadastroViewModel)">
+            <summary>
+            Realiza o cadastro de um cliente
+            </summary>
+            <param name="clienteViewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IAudit.Teste.Controllers.ClienteController.EditarCliente(System.Int32,IAudit.Teste.Application.ViewModels.ClienteViewModel)">
+            <summary>
+            Realiza a edição de um cliente
+            </summary>
+            <param name="id"></param>
+            <param name="clienteViewModel"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>

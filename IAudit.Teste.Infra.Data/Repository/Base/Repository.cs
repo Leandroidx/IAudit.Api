@@ -2,6 +2,7 @@
 using IAudit.Teste.Infra.Domain.Interfaces.Base;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Linq;
 
 namespace IAudit.Teste.Infra.Data.Repository
 {
@@ -27,5 +28,22 @@ namespace IAudit.Teste.Infra.Data.Repository
         {
             return DbContext.SaveChanges();
         }
+
+        public virtual void Adicionar(TEntity obj)
+        {
+            DbSet.Add(obj);
+        }
+
+        public virtual void Atualizar(TEntity obj)
+        {
+            DbSet.Attach(obj);
+            DbContext.Entry(obj).State = EntityState.Modified;
+        }
+
+        public virtual void Remover(TEntity obj)
+        {
+            DbSet.Remove(obj);
+        }
+
     }
 }

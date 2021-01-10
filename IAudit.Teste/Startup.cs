@@ -37,6 +37,11 @@ namespace IAudit.Teste
             {
                 options.SwaggerDoc("v1", new OpenApiInfo { Title = "IAudit Api", Version = "v1", });
             });
+
+            services.AddCors(options => options.AddPolicy("ApiCorsPolicy", builder =>
+            {
+                builder.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader();
+            }));
         }
 
        
@@ -46,6 +51,10 @@ namespace IAudit.Teste
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCors(builder => builder
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
 
             app.UseSwagger();
 

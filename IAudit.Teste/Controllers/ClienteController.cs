@@ -73,6 +73,7 @@ namespace IAudit.Teste.Controllers
             return Ok(retorno);
         }
 
+
         /// <summary>
         /// Realiza o cadastro de um cliente
         /// </summary>
@@ -104,6 +105,103 @@ namespace IAudit.Teste.Controllers
         public IActionResult EditarCliente(int id, ClienteViewModel clienteViewModel)
         { 
             var retorno = clienteAppService.EditarCliente(id, clienteViewModel);
+            if (!retorno)
+            {
+                return NotFound();
+            }
+
+            return Ok(retorno);
+        }
+
+
+        /// <summary>
+        /// Lista todos endereços de um cliente
+        /// </summary>
+        /// <param name="idCliente"></param>
+        /// <returns></returns>
+        [HttpGet("{id}/enderecos")]
+        [ProducesResponseType(typeof(ClienteViewModel), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult ListarEnderecos(int id)
+        {
+            var enderecos = clienteAppService.ListarEnderecos(id);
+            if (enderecos == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(enderecos);
+        }
+
+        /// <summary>
+        /// Realiza o cadastro de um endereço para um cliente
+        /// </summary>
+        /// <param name="clienteEnderecoCadastroViewModel"></param>
+        /// <returns></returns>
+        [HttpPost("endereco")]
+        [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult CadastrarEndereco(ClienteEnderecoCadastroViewModel clienteEnderecoCadastroViewModel)
+        {
+            var retorno = clienteAppService.CadastrarEndereco(clienteEnderecoCadastroViewModel);
+            if (retorno <= 0)
+            {
+                return NotFound();
+            }
+
+            return Ok(retorno);
+        }
+
+        /// <summary>
+        /// Retorna um endereço pelo id
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("endereco/{id}")]
+        [ProducesResponseType(typeof(ClienteEnderecoViewModel), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult ObterEndereco(int id)
+        {
+            var cliente = clienteAppService.ObterEndereco(id);
+            if (cliente == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(cliente);
+        }
+
+        /// <summary>
+        /// Realiza a edição de um endereço
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="clienteEnderecoViewModel"></param>
+        /// <returns></returns>
+        [HttpPut("endereco/{id}")]
+        [ProducesResponseType(typeof(bool), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult EditarEndereco(int id, ClienteEnderecoViewModel clienteEnderecoViewModel)
+        {
+            var retorno = clienteAppService.EditarEndereco(id, clienteEnderecoViewModel);
+            if (!retorno)
+            {
+                return NotFound();
+            }
+
+            return Ok(retorno);
+        }
+
+        /// <summary>
+        /// Deleta o endereço pelo identificador
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete("endereco/{id}")]
+        [ProducesResponseType(typeof(bool), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult ExcluirEndereco(int id)
+        {
+            var retorno = clienteAppService.ExcluirEndereco(id);
+
             if (!retorno)
             {
                 return NotFound();

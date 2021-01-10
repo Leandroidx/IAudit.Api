@@ -11,7 +11,7 @@ namespace IAudit.Teste.Application.ViewModels
         public string Email { get; set; }
         public DateTime DataNascimento { get; set; }
         public string Descricao { get; set; }
-        public List<ClienteEnderecoViewModel> ClienteEnderecos { get; set; }
+        public List<ClienteEnderecoCadastroViewModel> ClienteEnderecos { get; set; }
 
     }
 }

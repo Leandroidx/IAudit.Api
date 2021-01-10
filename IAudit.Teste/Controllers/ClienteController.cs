@@ -161,13 +161,13 @@ namespace IAudit.Teste.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult ObterEndereco(int id)
         {
-            var cliente = clienteAppService.ObterEndereco(id);
-            if (cliente == null)
+            var clienteEndereco = clienteAppService.ObterEndereco(id);
+            if (clienteEndereco == null)
             {
                 return NotFound();
             }
 
-            return Ok(cliente);
+            return Ok(clienteEndereco);
         }
 
         /// <summary>
